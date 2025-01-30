@@ -1,9 +1,74 @@
-let titulo = document.querySelector('h1');
-let parrafo = document.querySelector('p');
+/*let numeroSecreto = generarNumeroSecreto();
+let intentos = 0;
 
-parrafo.innerHTML = "Elija un numero del 1 al 10";
-titulo.innerHTML = "Bienvenido al juego del numero secreto";
 
-function intentoDeUsuario() {
-    alert('Click desde la funcion');
+function asignarTextoElemento(elemento, texto) {
+    let elementoHTML = document.querySelector(elemento);
+    elementoHTML.innerHTML = texto;
+    return;
 }
+
+function verificarIntento() {
+    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
+    
+    if (numeroDeUsuario === numeroSecreto) {
+        asignarTextoElemento('p',`Acertaste el número en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
+        document.getElementById('reiniciar').removeAttribute('disabled');
+    } else {
+        //El usuario no acertó.
+        if (numeroDeUsuario > numeroSecreto) {
+            asignarTextoElemento('p','El número secreto es menor');
+        } else {
+            asignarTextoElemento('p','El número secreto es mayor');
+        }
+        intentos++;
+        limpiarCaja();
+    }
+    return;
+}
+
+function limpiarCaja() {
+    document.querySelector('#valorUsuario').value = '';
+}
+
+function generarNumeroSecreto() {
+    return Math.floor(Math.random()*10)+1;
+
+}
+
+function condicionesIniciales() {
+    asignarTextoElemento('h1','Juego del número secreto!');
+    asignarTextoElemento('p',`Indica un número del 1 al 10`);
+    numeroSecreto = generarNumeroSecreto();
+    intentos = 1;
+    console.log(numeroSecreto);
+}
+
+function reiniciarJuego() {
+    //limpiar caja
+    limpiarCaja();
+    //Indicar mensaje de intervalo de números 
+    //Generar el número aleatorio
+    //Inicializar el número intentos
+    condicionesIniciales();
+    //Deshabilitar el botón de nuevo juego
+    document.querySelector('#reiniciar').setAttribute('disabled','true');
+    
+}
+
+condicionesIniciales();
+*/
+//Indice de masa corporal
+/*
+function indiceMasaCorporal (){
+    let metros = parseFloat(prompt('Indica tu altura en metros'));
+    let peso = parseFloat(prompt('Indica tu peso en kgs'));
+
+    let masaCorporal = parseFloat(metros * peso);
+    alert(`Con un peso de: ${peso} y una altura de ${metros}, tu indice de masa corporal es de ${masaCorporal}`);
+    return;    
+}
+
+indiceMasaCorporal();
+*/
+
